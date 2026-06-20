@@ -21,7 +21,7 @@ const editorConfig = {
 function App() {
   return (
     <LexicalComposer initialConfig={editorConfig}>
-      <div style={{ position: 'relative', border: '1px solid #ccc', padding: 8 }}>
+      <div style={{ position: 'relative', border: '1px solid #ccc', padding: 8, maxWidth: 640, margin: '0 auto' }}>
         <RichTextPlugin
           contentEditable={<ContentEditable style={{ minHeight: 200, outline: 'none' }} />}
           ErrorBoundary={LexicalErrorBoundary}
